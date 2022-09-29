@@ -1,4 +1,4 @@
-# myapp
+# War of the Legends
 
 ## Project setup
 ```
