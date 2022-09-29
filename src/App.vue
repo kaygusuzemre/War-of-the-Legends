@@ -1,27 +1,21 @@
 <template>
   <div id="app" class="one" img-src="https://samczsun.com/content/images/size/w2000/2020/09/109768371_xl.jpg">
     <HeaderOne />
-
     <video autoplay muted loop id="myVideo">
       <source src="./assets/lol.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-
     <div class="header2 d-flex align-items-center justify-content-center mb-5" style="height: 100vh">
       <h1 data-text="WORLD OF THE LEGENDS"><span>WORLD OF THE LEGENDS</span></h1>
     </div>
-
     <CardsOne />
-
     <div class="text-center">
       <video id="video" controls muted autoplay name>
         <source src="./assets/video.mp4" type="video/mp4">
         <audio src="path/to/song.mp3" controls autoplay></audio>
       </video>
     </div>
-
     <FooterOne />
-
   </div>
 </template>
 

@@ -30,9 +30,7 @@
                 </b-card>
             </b-col>
         </b-row>
-
         <hr>
-
         <b-row class="my-3">
             <b-col lg="4" sm="12">
                 <b-card class="Card1 bg-dark text-white m-3"
