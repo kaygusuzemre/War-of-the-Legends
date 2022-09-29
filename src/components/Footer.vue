@@ -4,13 +4,12 @@
             <b-navbar-nav class="text-capitalize">
                 <b-nav-item>home</b-nav-item>
                 <b-nav-item>features</b-nav-item>
-                <b-nav-item>pricing</b-nav-item>
                 <b-nav-item>FAQs</b-nav-item>
                 <b-nav-item>about</b-nav-item>
             </b-navbar-nav>
         </b-navbar>
         <div class="text-center py-4">
-            <p>© 2022 Company, Inc</p>
+            <p>© Developed by Emre Kaygusuz</p>
         </div>
     </div>
 </template>

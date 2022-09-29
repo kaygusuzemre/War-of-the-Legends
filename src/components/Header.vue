@@ -1,8 +1,9 @@
 <template>
-    <div class="headerr px-5" style="">
-        <b-navbar toggleable="lg" type="dark" class="px-5">
+    <div class="headerr px-5 m-0" style="width:100%">
+        <div class="position-absolute"></div>
+        <b-navbar toggleable="lg" type="dark" class="navbar px-5">
             <b-navbar-brand href="#">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/WoW_icon.svg/2048px-WoW_icon.svg.png"
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png"
                     alt="" class="" height="60px" width="60px">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -15,7 +16,8 @@
                 <!-- Right aligned nav items -->
                 <b-navbar-nav class="justify-content-end align-items-center">
                     <b-nav-form class="px-3">
-                        <b-form-input size="m" class="mr-sm-2 bg-dark text-light" placeholder="Heroes"></b-form-input>
+                        <b-form-input size="m" class="mr-sm-2 bg-dark text-light" placeholder="Heroes">
+                        </b-form-input>
                     </b-nav-form>
                     <b-button size="m" class="me-2 my-sm-0" type="submit">Search</b-button>
 
@@ -37,10 +39,6 @@
                 </b-navbar-nav>
             </b-collapse>
         </b-navbar>
-
-        <div class="text-center align-items-center justify-content-center">
-            <h1>WORLD OF WARCRAFT</h1>
-        </div>
     </div>
 </template>
 
@@ -51,5 +49,13 @@ export default {
 </script>
 
 <style>
-
+.headerr {
+    position: fixed;
+    /* display: flex;
+    justify-content: space-between; */
+    z-index: 2;
+    right: 50%;
+    transform: translateX(50%);
+    backdrop-filter: blur(4px);
+}
 </style>
