@@ -1,5 +1,5 @@
 <template>
-    <div class="headerr px-5" style="height: 100vh">
+    <div class="headerr px-5" style="">
         <b-navbar toggleable="lg" type="dark" class="px-5">
             <b-navbar-brand href="#">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/WoW_icon.svg/2048px-WoW_icon.svg.png"
