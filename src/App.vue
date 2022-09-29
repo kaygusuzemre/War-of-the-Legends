@@ -1,12 +1,12 @@
 <template>
-  <div id="app" class="one" img-src="https://samczsun.com/content/images/size/w2000/2020/09/109768371_xl.jpg">
+  <div id="app" img-src="https://samczsun.com/content/images/size/w2000/2020/09/109768371_xl.jpg">
     <HeaderOne />
-    <video autoplay muted loop id="myVideo">
+    <video autoplay loop id="myVideo">
       <source src="./assets/lol.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
     <div class="header2 d-flex align-items-center justify-content-center mb-5" style="height: 100vh">
-      <h1 data-text="WORLD OF THE LEGENDS"><span>WORLD OF THE LEGENDS</span></h1>
+      <h1 data-text="WAR OF THE LEGENDS"><span>WAR OF THE LEGENDS</span></h1>
     </div>
     <CardsOne />
     <div class="text-center">
@@ -40,9 +40,6 @@ export default {
 #app {
   font-family: 'Life Savers', cursive;
   color: #2c3e50;
-}
-
-.one {
   background-image: linear-gradient(to bottom,
       rgba(10, 10, 10, 0.8),
       rgba(255, 99, 71, 0.5)),
@@ -51,27 +48,45 @@ export default {
   background-position: center;
   background-attachment: fixed;
   background-size: auto;
+  animation: fade-in 1.5s ease, slide-in 1.2s ease;
+}
+
+//Animations
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    top: -300px;
+  }
+
+  100% {
+    top: 0;
+  }
 }
 
 h1 {
   position: relative;
   font-size: 80px;
-  // font-weight: 100;
+  font-size: calc(10px + 5vw);
   color: #fff;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-shadow: 0 0 0.15em #1da9cc;
-  // user-select: none;
   white-space: nowrap;
   filter: blur(0.007em);
   animation: shake 2.5s;
-  // left: 50%;
 }
 
 h1 span {
   position: absolute;
-  // top: 50%;
-  // left: 50%;
   transform: translate(-50%, -50%);
   -webkit-clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);
   clip-path: polygon(10% 0%, 44% 0%, 70% 100%, 55% 100%);

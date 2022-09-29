@@ -11,24 +11,20 @@
                 <b-navbar-nav>
                     <b-nav-item href="#">Heroes</b-nav-item>
                     <b-nav-item href="#">Strategies</b-nav-item>
+                    <b-nav-item href="#">How to play</b-nav-item>
                 </b-navbar-nav>
-                <b-navbar-nav class="justify-content-end align-items-center">
+                <b-navbar-nav class="justify-content-end">
                     <b-nav-form class="px-3">
                         <b-form-input size="m" class="mr-sm-2 bg-dark text-light" placeholder="Heroes">
                         </b-form-input>
                     </b-nav-form>
-                    <b-button size="m" class="me-2 my-sm-0" type="submit">Search</b-button>
+                    <b-button size="m" class="my-sm-0" type="submit">Search</b-button>
                     <b-nav-item-dropdown text="Lang">
                         <b-dropdown-item href="#">EN</b-dropdown-item>
-                        <b-dropdown-item href="#">ES</b-dropdown-item>
-                        <b-dropdown-item href="#">RU</b-dropdown-item>
-                        <b-dropdown-item href="#">FA</b-dropdown-item>
+                        <b-dropdown-item href="#">DE</b-dropdown-item>
                         <b-dropdown-item href="#">TR</b-dropdown-item>
                     </b-nav-item-dropdown>
-                    <b-nav-item-dropdown>
-                        <template #button-content>
-                            <em>User</em>
-                        </template>
+                    <b-nav-item-dropdown text="User">
                         <b-dropdown-item href="#">Profile</b-dropdown-item>
                         <b-dropdown-item href="#">Sign Out</b-dropdown-item>
                     </b-nav-item-dropdown>
@@ -47,11 +43,10 @@ export default {
 <style>
 .headerr {
     position: fixed;
-    /* display: flex;
-    justify-content: space-between; */
     z-index: 2;
     right: 50%;
     transform: translateX(50%);
     backdrop-filter: blur(4px);
+    letter-spacing: 1px;
 }
 </style>
