@@ -9,7 +9,7 @@
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav class="row-cols-2 justify-content-between align-items-center">
                 <b-navbar-nav>
-                    <b-nav-item href="#">Heroes</b-nav-item>
+                    <b-nav-item @click="scroll('heroes')">Heroes</b-nav-item>
                     <b-nav-item href="#">Strategies</b-nav-item>
                     <b-nav-item href="#">How to play</b-nav-item>
                 </b-navbar-nav>
@@ -35,8 +35,13 @@
 </template>
 
 <script>
+
 export default {
     name: "HeaderFirst",
+    scroll(refName) {
+        const element = document.getElementById(refName);
+        element.scrollIntoView({ behavior: "smooth" });
+    },
 };
 </script>
 

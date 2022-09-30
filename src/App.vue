@@ -49,6 +49,7 @@ export default {
   background-attachment: fixed;
   background-size: auto;
   animation: fade-in 1.5s ease, slide-in 1.2s ease;
+  scroll-behavior: smooth;
 }
 
 //Animations

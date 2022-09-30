@@ -13,7 +13,8 @@
                 alt="logo" style="width:130px" height="130px">
         </div>
         <div class="text-center py-4">
-            <p>© Developed by <a href="https://github.com/kaygusuzemre" class="text-decoration-none"><span>Emre
+            <p>© Developed by <a href="https://github.com/kaygusuzemre" class="text-decoration-none"><span
+                        class="span-footer">Emre
                         Kaygusuz</span></a></p>
         </div>
     </div>
@@ -26,7 +27,7 @@ export default {
 </script>
 
 <style>
-span,
+.span-footer,
 a {
     color: black;
 }

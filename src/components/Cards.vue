@@ -1,5 +1,5 @@
 <template>
-    <b-container class="container justify-content-center text-center">
+    <b-container id="heroes" class="container justify-content-center text-center">
         <h2>Heroes</h2>
         <b-row class="my-3 justify-content-start">
             <b-col lg="3" sm="6">
@@ -8,6 +8,9 @@
                     <b-card-title>My card</b-card-title>
                     <b-card-text>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, molestias!
                     </b-card-text>
+                    <!-- <template #footer>
+                        <span>updated 3 months ago</span>
+                    </template> -->
                     <a href="https://www.leagueoflegends.com/de-de/champions/aatrox/" class="stretched-link"></a>
                 </b-card>
             </b-col>

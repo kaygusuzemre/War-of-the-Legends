@@ -1,6 +1,14 @@
 import Vue from "vue";
 import App from "./App.vue";
 
+import HeaderOne from "./components/Header.vue";
+import CardsOne from "./components/Cards.vue";
+import FooterOne from "./components/Footer.vue";
+
+Vue.use(HeaderOne);
+Vue.use(CardsOne);
+Vue.use(FooterOne);
+
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
 
 // Import Bootstrap and BootstrapVue CSS files (order is important)
