@@ -7,13 +7,18 @@
                     alt="" class="" height="60px" width="60px">
             </b-navbar-brand>
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
-            <b-collapse id="nav-collapse" is-nav class="row-cols-2 justify-content-between align-items-center">
-                <b-navbar-nav>
+            <b-collapse id="nav-collapse" is-nav class="row-cols-3 justify-content-between align-items-center">
+
+                <b-navbar-nav class="navbar-nav col-4">
                     <b-nav-item @click="scroll('heroes')">Heroes</b-nav-item>
                     <b-nav-item href="#">Strategies</b-nav-item>
                     <b-nav-item href="#">How to play</b-nav-item>
                 </b-navbar-nav>
-                <b-navbar-nav class="justify-content-end">
+
+                <b-navbar-nav class="navbar-nav-2 col-4">
+                </b-navbar-nav>
+
+                <b-navbar-nav class="navbar-nav col-4 justify-content-end">
                     <b-nav-form class="px-3">
                         <b-form-input size="m" class="mr-sm-2 bg-dark text-light" placeholder="Heroes">
                         </b-form-input>
@@ -29,6 +34,7 @@
                         <b-dropdown-item href="#">Sign Out</b-dropdown-item>
                     </b-nav-item-dropdown>
                 </b-navbar-nav>
+
             </b-collapse>
         </b-navbar>
     </div>
@@ -51,7 +57,11 @@ export default {
     z-index: 2;
     right: 50%;
     transform: translateX(50%);
-    backdrop-filter: blur(4px);
+    /* backdrop-filter: blur(4px); */
     letter-spacing: 1px;
+}
+
+.navbar-nav {
+    backdrop-filter: blur(4px);
 }
 </style>

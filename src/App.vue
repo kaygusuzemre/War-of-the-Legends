@@ -1,7 +1,7 @@
 <template>
   <div id="app" img-src="https://samczsun.com/content/images/size/w2000/2020/09/109768371_xl.jpg">
     <HeaderOne />
-    <video autoplay loop id="myVideo">
+    <video autoplay muted loop id="myVideo">
       <source src="./assets/lol.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
